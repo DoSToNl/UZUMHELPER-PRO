@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Как получить ID магазина Uzum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      max-width: 800px;
+      margin: 40px auto;
+      font-family: sans-serif;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .lang-switcher button {
+      font-size: 16px;
+      margin-left: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switcher">
+    <button onclick="switchLang('ru')">🇷🇺 RU</button>
+    <button onclick="switchLang('uz')">🇺🇿 UZ</button>
+  </div>
+
+  <!-- Русская версия -->
+  <div id="ru">
+    <h1>Как узнать ID магазина Uzum</h1>
+    <p>Следуйте инструкции ниже, чтобы получить ID своего магазина на платформе Uzum:</p>
+
+    <ol>
+      <li>Перейдите в <a href="https://seller.uzum.uz" target="_blank">личный кабинет продавца Uzum</a>.</li>
+      <li>Войдите в свой аккаунт</li>
+      <li>Выберите нужный вам магазин</li>
+      <li>Перейжите в раздел <strong>"Товары"</strong></li>
+      <li>Скопируйте этот ID и отправьте его боту.</li>
+      <img src="https://raw.githubusercontent.com/DoSToNl/UZUMHELPER-PRO/main/ru-shop-id.jpg" alt="" style="max-width: calc(100% + 20px);margin-left: -20px;">
+    </ol>
+  </div>
+
+  <!-- Узбекская версия -->
+  <div id="uz" class="hidden">
+    <h1>Uzum do‘kon ID raqamini qanday topish mumkin</h1>
+    <p>Uzum platformasidagi do‘kon ID raqamingizni olish uchun quyidagi ko‘rsatmalarga amal qiling:</p>
+
+    <ol>
+        <li><a href="https://seller.uzum.uz" target="_blank">Uzum sotuvchi shaxsiy kabineti</a> ga o‘ting.</li>
+        <li>Akkauntingizga kiring</li>
+        <li>Kerakli do‘konni tanlang</li>
+        <li><strong>"Tovarlar"</strong> bo‘limiga o‘ting</li>
+        <li>Ushbu ID raqamni nusxalab olib, botga yuboring.</li>
+        <img src="https://raw.githubusercontent.com/DoSToNl/UZUMHELPER-PRO/main/uz-shop-id.jpg" alt="" style="max-width: calc(100% + 20px);margin-left: -20px;">
+    </ol>
+  </div>
+
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('ru').classList.toggle('hidden', lang !== 'ru');
+      document.getElementById('uz').classList.toggle('hidden', lang !== 'uz');
+    }
+  </script>
+
+</body>
+</html>
